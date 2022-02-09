@@ -5,7 +5,7 @@ module RailsDominantColors
     def initialize(source, colors)
       raise(EmptySource) if source.nil? || source.empty?
       raise(FileNotFound) unless file_exist?(source)
-      raise(NotAnImage) unless file_is_image?(source)
+      # raise(NotAnImage) unless file_is_image?(source)
 
       super(source, colors)
     end
