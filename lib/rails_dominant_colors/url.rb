@@ -46,7 +46,7 @@ module RailsDominantColors
     end
 
     def tempfile(extension, body)
-      tempfile = Tempfile.open(['source', extension], "wb")
+      tempfile = Tempfile.open(['source', extension])
       tempfile.write(body)
       tempfile.close
       tempfile.path
